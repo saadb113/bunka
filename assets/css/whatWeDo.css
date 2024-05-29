@@ -1,0 +1,86 @@
+.ourServices {
+    width: 1420px;
+    margin: auto;
+}
+.ourServices .headingLg{
+    margin-bottom: 100px;
+}
+.ourServices .service {
+    gap: 6rem;
+}
+.ourServices .service img{
+    width: 58rem;
+    height: 46.8rem;
+}
+.ourServices .service h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 6.1rem;
+}
+.ourServices .service h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    color: #193760;
+}
+.ourServices .service p{
+    margin-bottom: 4rem;
+}
+
+
+
+.innerServices {
+    position: relative;
+}
+.innerServices .bg{
+    width: 100%;
+    height: 61.6rem;
+    background: #F9F9F9;
+    position: absolute;
+    top: 13.7rem;
+}
+.innerServices .service{
+    gap: 6rem;
+    z-index: 11;
+    position: relative;
+    width: 142rem;
+    margin: auto;
+    margin-bottom: 20rem;
+}
+.innerServices .service1 p{
+    width: 45.1rem;
+}
+.innerServices .service2 p{
+    width: 33.6rem;
+}
+.innerServices .service2 .serviceDetails{
+    width: -webkit-fill-available;
+}
+.innerServices .service img{
+    width: 80.9rem;
+    height: 65.3rem;
+}
+.innerServices .service2 p:nth-child(2){
+    margin-top: 7rem;
+    margin-left: auto;
+}
+.innerServices .service .serviceDetails{
+    padding-bottom: 7.7rem;
+
+}
+.innerServices .service.flexRowReverse{
+    padding-right: 0;
+    gap: 7rem;
+}
+.service p.text2.liP::before{
+content: "";
+width: .8rem;
+height: .8rem;
+display: flex;
+border-radius: 100%;
+background: #193760;
+position: relative;
+top: -1rem;
+}

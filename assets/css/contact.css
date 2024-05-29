@@ -1,0 +1,55 @@
+.contactForm .headingLg{
+    width: 142rem;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+.contactForm .container .form{
+    width: 118.6rem;
+    padding: 6rem;
+    background: #F9F9F9;
+}
+.contactForm .container .form form {
+    gap: 6rem;
+    max-width: 74rem;
+}
+.contactForm .container .form form .inputGroup{
+    gap: 2rem;
+}
+.contactForm .container .form form textarea,
+.contactForm .container .form form .inputGroup input{
+    width: 100%;
+    width: 36rem;
+    height: 5.6rem;
+    border: 0;
+    background: transparent;
+    border-bottom: .15rem solid #626262;
+    padding-left: 2rem;
+    
+}
+.contactForm .container .form form textarea{
+    width: 100%;
+    height: 12.1rem;
+    padding-top: 1.4rem;
+}
+.contactForm .container .form form .submit p{
+    max-width: 50rem;
+    font-size: 1.6rem;
+}
+.contactForm .container .contactInfo{
+    margin-left: 6rem;
+    margin-top: 6rem;
+}
+.contactForm .container .contactInfo h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #193760;
+}
+.contactForm .container .contactInfo p{
+    margin: 2rem 0;
+}
+.contactForm .container .contactInfo a{
+    text-decoration: none;
+    color: #2C2C2C;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
