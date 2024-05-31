@@ -7,11 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
     <link rel="stylesheet" href="./assets/css/swiper.min.css" />
     <style>
         .slick-arrow{
-            display: none;
+            display: none !important;
         }
     </style>
 </head>
@@ -247,6 +247,11 @@
     <div class="bottombg"></div>
     <h2 class="headingSm">See What our Clients Have to say About BUNKA</h2>
     <div class="swiper-wrapper">
+        <div class="swiper-slide slide-first" style="width: 25rem;">
+            <div class="slide-container" >
+    
+            </div>
+          </div>
       <div  data-aos="fade-left" class="swiper-slide">
         <div class="slide-container">
 
@@ -316,13 +321,18 @@
             working with them after BUNKA
         </p>
       </div>
+      </div>
+      <div class="swiper-slide slide-first" style="width: 25rem;">
+        <div class="slide-container" >
+
+        </div>
       </div>
     </div>
     <div class="arrow flex">
-        <svg class="reviewsPrev" width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  onclick="slide('prev')" class="reviewsPrev" width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26.5303 6.53033C26.8232 6.23743 26.8232 5.76256 26.5303 5.46967L21.7574 0.696697C21.4645 0.403804 20.9896 0.403804 20.6967 0.696697C20.4038 0.989591 20.4038 1.46446 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM6.55671e-08 6.75L26 6.75L26 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="#E97100"/>
         </svg>            
-        <svg class="reviewsNext" width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg onclick="slide('next')" class="reviewsNext" width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26.5303 6.53033C26.8232 6.23743 26.8232 5.76256 26.5303 5.46967L21.7574 0.696697C21.4645 0.403804 20.9896 0.403804 20.6967 0.696697C20.4038 0.989591 20.4038 1.46446 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM6.55671e-08 6.75L26 6.75L26 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="#E97100"/>
         </svg>            
     </div>
@@ -431,21 +441,22 @@
     </div>
     </footer>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <script src="./assets/js/swiper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+  <!-- <script src="./assets/js/swiper.min.js"></script> -->
   <script src="./assets/js/aos.js"></script>
   <!-- Initialize Swiper -->
   <script>
 // $('.swiper-wrapper').slick({
+//     infinite : false,
 //   slidesToShow: 2,
 //   slidesToScroll: 1
 // });
 
 const sliderFunc = ()=>{
     if(window.innerWidth <= 1024){
-
+document.querySelector(".slide-first").remove()
 new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween:20,
@@ -460,7 +471,6 @@ new Swiper(".mySwiper", {
 new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
-    freeMode: true,
     navigation: {
         nextEl: ".reviewsNext",
         prevEl: ".reviewsPrev",
@@ -469,10 +479,75 @@ new Swiper(".mySwiper", {
 });
 }
 }
-sliderFunc()
+// sliderFunc()
 window.addEventListener("resize", ()=>{
-    sliderFunc()
+    // sliderFunc()
 })
+let positions = []
+let positionNumber = 0
+const slides = document.querySelectorAll(".swiper-slide")
+const makeSlidePositions = ()=>{
+    if(window.innerWidth <= 1024){
+        positionNumber = window.innerWidth
+    }
+    else if(window.innerWidth <= 1250 && window.innerWidth > 1024 ){
+        positionNumber = 790
+    }
+    else if(window.innerWidth <= 1920 && window.innerWidth > 1250){
+        positionNumber = 941
+    }
+    console.log(positionNumber)
+    positions = []
+    
+    let positioncount = 0
+    for (let index = 0; index < slides.length - 2; index++) {
+        positioncount += positionNumber
+        const element = slides[index];
+        if(index == 0){
+            positions = [positioncount]
+        }else{
+            positions = [...positions, positioncount]
+        }
+    }
+}
+makeSlidePositions()
+window.addEventListener("resize", ()=>{
+    if(window.innerWidth <= 1024){
+        positionNumber = window.innerWidth
+        makeSlidePositions(positionNumber)
+    }
+    else if(window.innerWidth <= 1250 && window.innerWidth > 1024 ){
+        positionNumber = 790
+        makeSlidePositions(positionNumber)
+    }
+    else if(window.innerWidth <= 1920 && window.innerWidth > 1250){
+        positionNumber = 941
+    }
+})
+
+let slideNumber = -1
+const slide = (direction) => {
+    console.log(positionNumber)
+    const wrapper = document.querySelector(".swiper-wrapper");
+    
+    if (direction == "next") {
+        if (slideNumber + 1 == slides.length - 3) return;
+        slideNumber++;
+        wrapper.scrollTo({
+            left: positions[slideNumber],
+            behavior: 'smooth'
+        });
+        console.log(positions[slideNumber]);
+    } else if (direction == "prev") {
+        if (slideNumber == -1) return;
+        slideNumber--;
+        wrapper.scrollTo({
+            left: wrapper.scrollLeft - positionNumber,
+            behavior: 'smooth'
+        });
+    }
+};
+
     AOS.init({
         duration: 1000
     });
