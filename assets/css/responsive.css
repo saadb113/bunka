@@ -1,0 +1,462 @@
+@media screen and (max-width : 1700px) {
+    .mainSection:not(.mainSection2){
+        min-height: auto !important;
+    }
+    .mainSection .mainImg {
+        width: 45%;
+    }
+    .mainSection .container{
+        width: 95%;
+    }
+
+
+    .WhatIsBunka .container{
+        width: 125rem;
+    }
+    .WhatIsBunka .container div img{
+        width: 100%;
+    }
+    .youtubeVideo iframe{
+        width: 125rem;
+    }
+    .reviewsSection .arrow,
+.reviewsSection > h2,
+.reviewsSection .swiper-wrapper{
+    width: calc(100% - 12rem) !important;
+    margin-right: 0 !important;
+}
+
+footer .container,
+.blogs .container{
+    width: 125rem;
+}
+footer .container .top .medium .links{
+    gap: 2.5rem;
+}
+.blogs .container .blogsContainer .blog{
+    width: 32%;
+}
+.blogs .container .blogsContainer .blog img{
+    width: calc(100% + 4rem);
+    min-width: 100%;
+    object-fit: cover;
+}
+.blogs .container .blogsContainer .blog h2{
+    font-size: 2.2rem;
+}
+.mainHeader{
+    width: 90%;
+}
+}
+
+
+@media screen and (max-width : 1440px) {
+    .headingSm{
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+    }
+    .headingLg{
+        font-size: 7rem;
+        line-height: 8.8rem;
+    }
+    .headingMd{
+        font-size: 5rem;
+        line-height: 6.1rem;
+    }
+    .mainSection .mainText{
+        gap: 3rem;
+    }
+
+    .WhatIsBunka .container{
+        justify-content: center;
+    }
+    .WhatIsBunka .container div,
+    .WhatIsBunka .container p.text{
+        width: 50rem;
+    }
+    .youtubeVideo iframe{
+        width: 98rem;
+    }
+
+    .mainSection .mainText {
+        width: 47.7rem;
+    }
+    footer .container, .blogs .container{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    .WhatIsBunka h2 {
+        margin: 6rem 0;
+    }
+    .WhatIsBunka .container p.text{
+        margin-top: 5rem;
+    }
+    .reviewsSection .arrow, .reviewsSection > h2, .reviewsSection .swiper-wrapper{
+        width: calc(100% - 5rem) !important;
+    }
+    .mb200{
+        margin-bottom: 15rem;
+    }
+    html{
+        font-size: 52.5%;
+    }
+    .text{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .youtubeVideo iframe{
+        height: 50rem;
+    }
+    .reviewsSection .quotes{
+        width: 20rem;
+    }
+    .reviewsSection .bottombg{
+        bottom: -5%;
+        top: initial;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header:not(.headermb){
+        display: none;
+    }
+    .WhatIsBunka .container{
+        width: 100%;
+    }
+    .headermb{
+        display: flex;
+    }
+    .headermb .topHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headermb .topHeader .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 5rem;
+        position: relative;
+    }
+    .reviewsSection .arrow, .reviewsSection > h2, .reviewsSection .swiper-wrapper{
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto !important;
+    }
+    .reviewsSection .swiper-slide{
+        width: 100% !important;
+    }
+    .headermb .topHeader .hamburger input{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+    .headermb .topHeader .hamburger .line{
+        width: 100%;
+        height: .4rem;
+        background: black;
+        border-radius: 5rem;
+    }
+
+    .headermb .sidebar {
+        width: 100%;
+        height: 100vh;
+        z-index: 11;
+        
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .headermb.active .sidebar{
+        left: 0;
+    }
+    .headermb .sidebar .bg{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 0;
+        background: #0000007d;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+        .headermb.active .sidebar .bg{
+            opacity: 1;
+        }
+        .headermb .sidebar .container{
+            width: 70%;
+        height: 100vh;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        background: white;
+        transition: all .3s ease;
+        margin-left: 0;
+    }
+    .headermb.active .sidebar .container{
+        left: 0;
+    }
+    .headermb .sidebar .social{
+        margin-bottom: 2rem;
+    }
+    .headermb .sidebar .button{
+        margin-top: 2rem;
+    }
+    .headermb .sidebar .close{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+
+    .WhatIsBunka .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .WhatIsBunka h2{
+        margin-top: 0;
+    }
+    .WhatIsBunka .container div:nth-child(2) img{
+        display: none;
+    }
+    .WhatIsBunka .container p.text {
+        margin-top: 2rem;
+    }
+    .TheBunkaImpact .container .cards{
+        margin: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .headingMd{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .headingLg{
+        font-size: 6rem;
+    }
+    .TheBunkaImpact .container{
+        width: 90rem;
+    }
+    .mb200{
+        margin-bottom: 11rem;
+    }
+    .ourClients .container .clientsContainer{
+        gap: 4rem;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 2.5rem 0;
+    }
+    .ourClients .container .clientsContainer .container{
+        width: 80rem;
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: center;
+    }
+    .ourClients .container .clientsContainer .container div:not(.line){
+        min-width: 200px;
+    }
+    .button{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        padding: 1rem 2rem;
+    }   footer .container .top{
+        flex-wrap: wrap;
+    
+}   footer .container .top .contact{
+    width: 100%;
+}
+
+}
+@media screen and (max-width : 880px) {
+    .youtubeVideo iframe{
+        width: 95%;
+        height: auto !important;
+        min-height: 70vh;
+    }
+    .blogs .container .blogsContainer {
+        flex-wrap: wrap;
+        row-gap: 4rem;
+    }
+    .blogs .container .blogsContainer .blog{
+        width: 49%;
+    }
+    .TheBunkaImpact .container{
+        width: 80rem;
+    }
+    .mainSection .container h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .mainSection .mainText {
+        width: 37.7rem;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width : 768px) {
+    
+    .mainSection:not(.mainSection2) .container{
+        min-height: 35vh;
+        padding-bottom: 5rem;
+        margin: auto;
+    }
+    .mainSection .mainImg{
+        display: none;
+    }
+    .mainSection .mainText{
+        width: 100%;
+        max-width: 80%;
+    }
+    .mb200{
+        margin-bottom: 8rem;
+    }
+
+    .headingLg{
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .WhatIsBunka h2,
+    .TheBunkaImpact .container .top,
+    .ourClients .container .top{
+
+        margin-bottom: 5rem;
+    }
+    .TheBunkaImpact .container .top{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        
+    }.TheBunkaImpact .container .top h1{
+        align-items: center;
+    }
+    .TheBunkaImpact .container .cards .card h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .TheBunkaImpact .container .cards .card {
+        width: 26.7rem;
+        height: 15.5rem;
+    }
+    footer .bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    footer .bottom div{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+    footer .container .top{
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    footer .container .top .medium{
+        gap: 2rem;
+    }
+    footer .container .top .contact,
+    footer .container .top .medium{
+        width: max-content;
+    }
+    .ourClients .container .clientsContainer .container,
+    .TheBunkaImpact .container{
+        width: 54rem;
+    }
+    footer .container .top > img{
+        width: 200px;
+    }
+    .reviewsSection .arrow{
+        display: none;
+    }
+}
+@media screen and (max-width : 600px) {
+
+    .reviewsSection .quotes {
+        width: 12rem;
+        top: -20px ;
+    }
+    .reviewsSection > h2 {
+        margin-bottom: 4rem;
+    }    
+}
+@media screen and (max-width : 500px) {
+    .blogs .container .blogsContainer .blog img{
+        height: 16rem;
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+    }
+    .blogs .container .blogsContainer .blog h2{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        line-height: 2.2rem;
+    }
+    .blogs .container .blogsContainer .blog{
+        padding: 0 1rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .text2{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .WhatIsBunka .container div, .WhatIsBunka .container p.text{
+        width: 95%;
+    }
+    .ourClients .container .clientsContainer .container, .TheBunkaImpact .container{
+        width: 95%;
+    }
+    .TheBunkaImpact .container .cards .card{
+        width: 50%;
+    }
+    .mainSection .mainText{
+        max-width: 85%;
+    }
+    .reviewsSection .swiper-slide {
+        padding-right: 2.5vw !important;
+        padding-left: 2.5vw !important;
+    }
+}
+    @media screen and (max-width : 450px) {
+        .reviewsSection .swiper-wrapper{
+            justify-content: flex-start;
+        }
+        .reviewsSection .swiper-slide h2{
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+        .ourClients .container .clientsContainer .container{
+            gap: 6rem;
+        }
+        .youtubeVideo iframe{
+            min-height: 50vh;
+        }
+        
+    }

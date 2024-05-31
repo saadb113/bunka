@@ -61,6 +61,7 @@ p.text2.liP::before{
 .Partners h1{
     text-align: center;
     gap: 3rem;
+    align-items: center;
     margin-bottom: 1rem;
 }
 .Partners .member {
@@ -97,4 +98,90 @@ p.text2.liP::before{
 }
 .Partners .member .container .image div{
     padding: 0 4.4rem;
+}
+
+
+@media screen and (max-width : 1500px) {
+    .AboutUs h1.headingLg,
+    .AboutUs .section .container{
+        width: 95%;
+    }
+    .Partners .member .container .image > img{
+        width: 50.3rem;
+    }
+    .AboutUs .section img {
+        width: 33%;
+        object-fit: cover;
+    }
+    .AboutUs .section2 img {
+        width: 40%;
+    }
+    .Partners .member .container{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width : 1250px) {
+    .Partners .member .container .image > img {
+        width: 45rem;
+    }
+    .Partners .member .container .image div,
+    .Partners .member .container .image h2{
+        padding: 0 2rem;
+    }
+    .AboutUs .section .container,
+    .Partners .member .container {
+        gap: 5rem;
+    }
+}
+@media screen and (max-width : 950px) {
+    .AboutUs .section .container, .Partners .member .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .Partners .member .container,
+    .AboutUs h1.headingLg, .AboutUs .section .container{
+        width: 70rem;
+    }
+    .AboutUs .section img{
+        width: 100%;
+    }
+    .AboutUs .section2 .serviceDetails{
+
+    }
+    .AboutUs .section2 .bg{
+        top: initial;
+        bottom: 10rem;
+    }
+    .Partners h1{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .Partners .member .container, .AboutUs h1.headingLg, .AboutUs .section .container{
+        width: 95%;
+    }
+    .AboutUs .section2 p{
+        width: 100%;
+    }
+    .Partners .member .container .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Partners .member .container .image div, .Partners .member .container .image h2{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width : 550px) {
+    .Partners .member .container .image{
+        width: 100%;
+    }
+    .Partners .member .container .image > img{
+        width: 100%;
+    }
 }

@@ -53,3 +53,61 @@
     gap: 1.2rem;
     margin-bottom: 1.5rem;
 }
+
+@media screen and (max-width : 1700px) {
+    .contactForm .headingLg{
+        width: 100%;
+    }
+    .contactForm .container .form{
+        width: 65%;
+    }
+    .contactForm .headingLg{
+        text-align: center;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .contactForm .container .form{
+        padding: 4rem;
+    }
+    .contactForm .container .form form .inputGroup{
+        gap: 2%;
+    }
+    .contactForm .container .form form{
+        width: 100%;
+    }
+    .contactForm .container .form form .submit p{
+        max-width: 60%;
+    }
+    .contactForm .container .contactInfo{
+        margin-left: 3rem;
+    }
+    .contactForm .container .form form input{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    .contactForm .container{
+        flex-direction: column;
+        
+    }
+    .contactForm .container .form{
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 500px) {
+    .contactForm .container .form form .inputGroup{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contactForm .container .form form .inputGroup input{
+        width: 100%;
+    }
+    .contactForm .container .form form{
+        gap: 1rem;
+    }
+    .contactForm .container .form .submit{
+        margin-top: 2rem;
+    }
+}

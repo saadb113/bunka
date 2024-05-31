@@ -52,6 +52,10 @@
 .innerServices .service1 p{
     width: 45.1rem;
 }
+.TheBunkaImpact .container{
+    width: max-content;
+    margin: auto;
+}
 .innerServices .service2 p{
     width: 33.6rem;
 }
@@ -83,4 +87,115 @@ border-radius: 100%;
 background: #193760;
 position: relative;
 top: -1rem;
+}
+
+
+@media screen and (max-width : 1500px) {
+    .ourServices{
+        width: 95%;
+    }
+
+    .innerServices .service{
+        width: 95%;
+    }
+    .innerServices .service img{
+        width: 60%;
+        object-fit: cover;
+    }
+
+
+    .innerServices .bg{
+        height: 42rem;
+    }
+}
+@media screen and (max-width : 1250px) {
+    .TheBunkaImpact .container{
+        width: 70rem;
+    }
+    .ourServices .headingLg{
+text-align: center;
+    }
+    .TheBunkaImpact .container .cards{
+        justify-content: center;
+    }
+    .ourServices .service{
+        flex-direction: column;
+        width: 70rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ourServices .service img{
+        width: 100%;
+        border-radius: 1.2rem;
+    }
+
+
+    .innerServices .service img{
+        width: 50%;
+        height: 100%;
+    }
+    .innerServices .bg{
+        top: 7.7rem;
+    }
+    }
+@media screen and (max-width : 1024px) {
+    .innerServices .service{
+        flex-direction: column;
+        width: 70rem;
+
+    }
+    .innerServices .bg{
+        display: none;
+    }
+    .innerServices .service .serviceDetails{
+        padding-bottom: 0;
+    }
+    .innerServices .service img{
+        border-radius: 1.2rem;
+    }
+    .innerServices .service1 p,
+    .innerServices .service img{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .mainSection .container.flexRowReverse{
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+
+    .innerServices .service{
+        width: 95%;
+        margin-bottom: 10rem;
+
+    }
+}
+@media screen and (max-width : 650px) {
+    .ourServices .service{
+        width: 95%;
+    }
+    .ourServices .service img{
+        object-fit: cover;
+    }
+    
+    .ourServices .service h2{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .ourServices .service h3{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+}
+@media screen and (max-width : 500px) {
+    .innerServices .service2 p{
+        width: 100%;
+    }
+    .innerServices .service{
+        margin-bottom: 8rem;
+    }
 }

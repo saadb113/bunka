@@ -1,0 +1,21 @@
+.BlogPage
+{
+width: 100%;
+padding: 7.5rem 0;
+background: #F9F9F9;
+}
+.blogMainSection{
+    margin-bottom: 12.5rem;
+}
+.blogs .container .blogsContainer{
+    flex-wrap: wrap;
+    row-gap: 10rem;
+}
+.blogs .container  .button{
+    display: flex;
+    margin-top: 10rem !important;
+margin: auto;
+}
+.blogs .container .blogsContainer .blog{
+    background: transparent;
+}
