@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <style>
+        .slick-arrow{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +30,7 @@
             <nav class="flex itemsCenter">
                 <a href="/bunka/WhatWeDo.html" class="text">What We Do</a>
                 <a href="/bunka/AboutUs.html" class="text">About Us</a>
-                <img src="./assets/images/Homepage/logo.png" alt="">
+                <img onclick="document.location.href='/'" src="./assets/images/Homepage/logo.png" alt="">
                 <a href="/bunka/ContactUs.html" class="text">Contact Us</a>
                 <a href="" class="text">Blog</a>
             </nav>
@@ -36,9 +41,42 @@
         <!-- HEADER  END-->
 
 
+        <!-- MOBILE HEADER START-->
+        <header class="headermb mainHeader flex justifyBetween itemsCenter">
+            <div class="topHeader">
+                <img onclick="document.location.href='/'" src="./assets/images/Homepage/logo.png" alt="">
+                <div class="hamburger" onclick="document.querySelector('.headermb').classList.toggle('active')">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <nav class="sidebar flex itemsCenter">
+                <div class="bg"></div>
+
+                <div class="container">
+<svg xmlns="http://www.w3.org/2000/svg" onclick="document.querySelector('.headermb').classList.toggle('active')" class="close" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                <div class="social flex itemsCenter">
+                    <a href=""><img src="./assets/images/Homepage/linkedinHeader.png" alt=""></a>
+                    <a href=""><img src="./assets/images/Homepage/YoutubeHeader.png" alt=""></a>
+                </div>
+                <a href="/bunka/WhatWeDo.html" class="text">What We Do</a>
+                <a href="/bunka/AboutUs.html" class="text">About Us</a>
+                <a href="/bunka/ContactUs.html" class="text">Contact Us</a>
+                <a href="" class="text">Blog</a>
+                <a href="./ContactUs.html" class="talk button">
+                    Let's Talk
+                </a>
+            </div>
+
+            </nav>
+        </header>
+        <!-- MOBILE HEADER  END-->
+
+
 
         <div class="container flex justifyBetween itemsCenter ">
-            <div class="mainText flex flexCol">
+            <div class="mainText flex flexCol" data-aos="fade-right">
                 <h1 class="headingSm">
                     It's not how good you are.
                     It's how good you are going to be.
@@ -47,11 +85,11 @@
                     It is a long established fact that a reader will be distracted by the readable content of a page
                     when looking at its layout.
                 </p>
-                <a class="button">
+                <a href="./ContactUs.html" class="button">
                     Learn More
                 </a>
             </div>
-            <div class="mainImg">
+            <div class="mainImg" data-aos="fade-left">
                 <img src="./assets/images/Homepage/mainSectionRight.png" alt="">
             </div>
         </div>
@@ -63,11 +101,11 @@
     <!-- WHAT IS BUNKA SECTION START  -->
     <section class="WhatIsBunka flex justifyCenter mb200">
         <div class="container flex">
-            <div>
+            <div data-aos="fade-right">
                 <h2 class="headingLg">What is Bunka?</h2>
                 <img src="./assets/images/Homepage/WhatIsBunka2.png" alt="">
             </div>
-            <div class="flex flexCol itemsCenter">
+            <div data-aos="fade-left" class="flex flexCol itemsCenter">
                 <img src="./assets/images/Homepage/WhatIsBunka1.png" alt="">
                 <div class="description">
 
@@ -76,7 +114,7 @@
                         strong team and organizational culture to achieve results. BUNKA provides the tools, support and
                         infrastructure to help leaders improve and develop personally and professionally.
                     </p>
-                    <a href="" class="button">See What We Do</a>
+                    <a href="./WhatWeDo.html" class="button">See What We Do</a>
                 </div>
             </div>
         </div>
@@ -88,7 +126,7 @@
     <!-- THE BUNKA IMPACT SECTION START  -->
     <section class="TheBunkaImpact mb200">
         <div class="container">
-            <div class="top itemsCenter flex justifyBetween">
+            <div data-aos="fade-down" class="top itemsCenter flex justifyBetween">
                 <h1 class="headingMd flex flexCol">
                     <svg width="57" height="2" viewBox="0 0 57 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.5 1L22.5 0.999999" stroke="#193760" stroke-width="2" stroke-linecap="square" />
@@ -103,39 +141,37 @@
                 </p>
             </div>
             <div class="cards flex">
-                <div class="card flex flexCol justifyCenter itemsCenter">
+                <div data-aos="fade" class="card flex flexCol justifyCenter itemsCenter">
                     <h2>$800 Million</h2>
                     <p class="text">
                         Cost Reduction
                     </p>
                 </div>
-                <div class="card odd flex flexCol justifyCenter itemsCenter">
+                <div data-aos="fade" class="card odd flex flexCol justifyCenter itemsCenter">
                     <h2>$500 Million</h2>
                     <p class="text">
                         Increase in Production
                     </p>
                 </div>
-                <div class="card flex flexCol justifyCenter itemsCenter">
+                <div data-aos="fade" class="card flex flexCol justifyCenter itemsCenter">
                     <h2>$50 Million</h2>
                     <p class="text">
                         In Downtime Savings
                     </p>
                 </div>
-            </div>
-            <div class="cards flex">
-                <div class="card odd flex flexCol justifyCenter itemsCenter">
+                <div data-aos="fade" class="card odd flex flexCol justifyCenter itemsCenter">
                     <h2>89%</h2>
                     <p class="text">
                         Reduction in Backorder
                     </p>
                 </div>
-                <div class="card flex flexCol justifyCenter itemsCenter">
+                <div data-aos="fade" class="card flex flexCol justifyCenter itemsCenter">
                     <h2>85%</h2>
                     <p class="text">
                         Reduction in Non-conformance Reporting
                     </p>
                 </div>
-                <div class="card odd flex flexCol justifyCenter itemsCenter">
+                <div data-aos="fade" class="card odd flex flexCol justifyCenter itemsCenter">
                     <h2>22:1 ROI</h2>
                     <p class="text">
                         Recognized by our Clients
@@ -150,7 +186,7 @@
     <!-- OUR CLIENTS SECTION START -->
     <section class="ourClients mb200">
         <div class="container">
-            <div class="top flex flexCol itemsCenter">
+            <div data-aos="fade-down" class="top flex flexCol itemsCenter">
                 <svg width="57" height="2" viewBox="0 0 57 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5 1L22.5 0.999999" stroke="#193760" stroke-width="2" stroke-linecap="square" />
                     <path d="M32.5 1.00001H43.5" stroke="#193760" stroke-width="2" stroke-linecap="square" />
@@ -159,31 +195,35 @@
                 <h2 class="headingMd">Our Clients</h2>
             </div>
             <div class="clientsContainer flex justifyBetween itemsCenter">
-                <div class="flex flexCol itemsCenter">
+                <div class="container flex itemsCenter justifyBetween">
+
+                <div data-aos="fade" class="flex flexCol itemsCenter">
                     <img src="./assets/images/Homepage/ourclients1.png" alt="">
                     <div class="line"></div>
                     <p class="text2">Google</p>
                 </div>
-                <div class="flex flexCol itemsCenter">
+                <div data-aos="fade" class="flex flexCol itemsCenter">
                     <img src="./assets/images/Homepage/ourclients2.png" alt="">
                     <div class="line"></div>
                     <p class="text2">G. Business</p>
                 </div>
-                <div class="flex flexCol itemsCenter">
+                <div data-aos="fade" class="flex flexCol itemsCenter">
                     <img src="./assets/images/Homepage/ourclients3.png" alt="">
                     <div class="line"></div>
                     <p class="text2">Trustpilot</p>
                 </div>
-                <div class="flex flexCol itemsCenter">
+                <div data-aos="fade" class="flex flexCol itemsCenter">
                     <img src="./assets/images/Homepage/ourclients4.png" alt="">
                     <div class="line"></div>
                     <p class="text2">Buzz Sumo</p>
                 </div>
-                <div class="flex flexCol itemsCenter">
+                <div data-aos="fade" class="flex flexCol itemsCenter">
                     <img src="./assets/images/Homepage/ourclients5.png" alt="">
                     <div class="line"></div>
                     <p class="text2">Sem Rus</p>
                 </div>
+            </div>
+
             </div>
         </div>
     </section>
@@ -193,7 +233,7 @@
     <!-- YOUTUBE VIDEO SECTION START  -->
     <div class="youtubeVideo mb200 flex justifyCenter">
 
-        <iframe width="1420" height="749" src="https://www.youtube.com/embed/pE0EEZ0NYPE?si=RcZjK0EGqcgu8QyC"
+        <iframe data-aos="zoom-in" width="1420" height="749" src="https://www.youtube.com/embed/pE0EEZ0NYPE?si=RcZjK0EGqcgu8QyC"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -207,7 +247,33 @@
     <div class="bottombg"></div>
     <h2 class="headingSm">See What our Clients Have to say About BUNKA</h2>
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div  data-aos="fade-left" class="swiper-slide">
+        <div class="slide-container">
+
+        <h2 class="headingSm">Manufacturing Supervisor</h2>
+        <svg width="57" height="2" viewBox="0 0 57 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 1L22.5 0.999999" stroke="#193760" stroke-width="2" stroke-linecap="square" />
+            <path d="M32.5 1.00001H43.5" stroke="#193760" stroke-width="2" stroke-linecap="square" />
+            <path d="M53.5 1.00001H55.5" stroke="#193760" stroke-width="2" stroke-linecap="square" />
+        </svg>
+        <p class="text">
+            Over the last 24 years with different med device companies, I have been through numerous
+            leadership courses over those years and most were less than a week and back to your job, with no
+            follow up. Over the last weeks with BUNKA, we have had time to learn, grow, execute and more
+            importantly follow up with Monika, Steve and our coaches. <br>
+            The small classes offered a chance to feel comfortable and ask the questions that you would not
+            have asked with 20 people in the class. Monika was able to focus on each of us and was able to
+            stop if she saw a blank look on one of our faces. It was nice to learn that even though we were
+            all from different departments we shared many of the same thoughts, concerns or obstacles with
+            our jobs on a daily basis. It’s has been nice getting to know everyone and I look forward to
+            working with them after BUNKA
+        </p>
+    </div>
+
+      </div>
+      <div  data-aos="fade-left" class="swiper-slide">
+        <div class="slide-container">
+
         <h2 class="headingSm">Manufacturing Supervisor</h2>
         <svg width="57" height="2" viewBox="0 0 57 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.5 1L22.5 0.999999" stroke="#193760" stroke-width="2" stroke-linecap="square" />
@@ -227,7 +293,10 @@
             working with them after BUNKA
         </p>
       </div>
-      <div class="swiper-slide">
+      </div>
+      <div  data-aos="fade-left" class="swiper-slide">
+        <div class="slide-container">
+
         <h2 class="headingSm">Manufacturing Supervisor</h2>
         <svg width="57" height="2" viewBox="0 0 57 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.5 1L22.5 0.999999" stroke="#193760" stroke-width="2" stroke-linecap="square" />
@@ -247,25 +316,6 @@
             working with them after BUNKA
         </p>
       </div>
-      <div class="swiper-slide">
-        <h2 class="headingSm">Manufacturing Supervisor</h2>
-        <svg width="57" height="2" viewBox="0 0 57 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.5 1L22.5 0.999999" stroke="#193760" stroke-width="2" stroke-linecap="square" />
-            <path d="M32.5 1.00001H43.5" stroke="#193760" stroke-width="2" stroke-linecap="square" />
-            <path d="M53.5 1.00001H55.5" stroke="#193760" stroke-width="2" stroke-linecap="square" />
-        </svg>
-        <p class="text">
-            Over the last 24 years with different med device companies, I have been through numerous
-            leadership courses over those years and most were less than a week and back to your job, with no
-            follow up. Over the last weeks with BUNKA, we have had time to learn, grow, execute and more
-            importantly follow up with Monika, Steve and our coaches. <br>
-            The small classes offered a chance to feel comfortable and ask the questions that you would not
-            have asked with 20 people in the class. Monika was able to focus on each of us and was able to
-            stop if she saw a blank look on one of our faces. It was nice to learn that even though we were
-            all from different departments we shared many of the same thoughts, concerns or obstacles with
-            our jobs on a daily basis. It’s has been nice getting to know everyone and I look forward to
-            working with them after BUNKA
-        </p>
       </div>
     </div>
     <div class="arrow flex">
@@ -284,7 +334,7 @@
     <section class="blogs mb200">
         <div class="container">
             <h2 class="headingMd" style="text-align: center;">Check Out Latest Blog</h2>
-            <div class="blogsContainer flex justifyBetween">
+            <div  data-aos="fade" class="blogsContainer flex justifyBetween">
                 <div class="blog">
                     <img src="./assets/images/Homepage/blog1.png" alt="">
                     <h2 class="title">It is a long established fact</h2>
@@ -380,18 +430,51 @@
     
     </div>
     </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      navigation: {
+// $('.swiper-wrapper').slick({
+//   slidesToShow: 2,
+//   slidesToScroll: 1
+// });
+
+const sliderFunc = ()=>{
+    if(window.innerWidth <= 1024){
+
+new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween:20,
+  navigation: {
+    nextEl: ".reviewsNext",
+    prevEl: ".reviewsPrev",
+  },
+  
+});
+}else{
+
+new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    freeMode: true,
+    navigation: {
         nextEl: ".reviewsNext",
         prevEl: ".reviewsPrev",
-      },
+    },
+    
+});
+}
+}
+sliderFunc()
+window.addEventListener("resize", ()=>{
+    sliderFunc()
+})
+    AOS.init({
+        duration: 1000
     });
   </script>
 </body>
