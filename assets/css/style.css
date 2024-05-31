@@ -23,17 +23,34 @@
     background: #fff;
 }
 .swiper-slide {
-  text-align: center;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.slide-first{
+    margin-right: 0 !important;
+    width: 25rem !important;
+}
+.swiper-slide:not(.slide-first){
+    width: max-content !important;
+    padding-right: 2rem ;
+}
+.slick-track{
+    width: max-content !important;
+}
+.slide-first .slide-container{
+    background: transparent !important;
+    box-shadow: none !important;
+    width: 92.1rem;
+}
 
 html{
     font-size: 62.5%;
+}
+body{
     /* overflow-x: hidden; */
     max-width: 100vw;
 }
@@ -318,12 +335,14 @@ color: #626262;
     left: 0;
     width: 27.5rem;
 }
-.reviewsSection .swiper-wrapper{
-    width: calc(100% - 25rem);
-}
+
 .reviewsSection .swiper-wrapper {
-    width: calc(100% - 25rem);
+    width: 100%;
     margin-left: auto;
+    overflow: scroll;
+}
+.reviewsSection .swiper-wrapper::-webkit-scrollbar {
+    display: none;
 }
 .reviewsSection  > h2{
     width: 142rem;
