@@ -49,9 +49,10 @@
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     max-width: 100vw;
 }
 .text{
@@ -80,12 +81,7 @@ color: #626262;
     background: transparent;
     color: #193760;
 }
-.button:before{
-    content: "";
-    width: 100%;
-    height: 100%;
 
-}
 .flexCol{
     flex-direction: column;
 }
@@ -370,6 +366,9 @@ color: #626262;
     margin: auto;
     margin-top: 10rem;
     gap: 2rem;
+}
+.reviewsSection .arrow svg{
+    cursor: pointer;
 }
 .reviewsSection .arrow .reviewsPrev{
     transform: rotate(180deg);

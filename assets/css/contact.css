@@ -111,3 +111,17 @@
         margin-top: 2rem;
     }
 }
+@media screen and (max-width : 450px) {
+    .contactForm .container .form .submit{
+        flex-direction: column;
+        gap: 2rem;
+    }.contactForm .container .form form .submit p{
+        max-width: 100%;
+    }
+    .contactForm .container .form{
+        padding: 4rem 2rem;
+    }
+    .contactForm .container .contactInfo{
+        margin-left: 2rem;
+    }
+}
