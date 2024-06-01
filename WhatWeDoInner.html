@@ -66,7 +66,7 @@
 
 
         <div class="container flex justifyBetween itemsCenter ">
-            <div class="mainText flex flexCol">
+            <div class="mainText flex flexCol" data-aos="fade-right">
                 <h1 class="headingSm">
                     Your Company is Unique. Your Approach to Improve Should Be Too.
                 </h1>
@@ -77,7 +77,7 @@
                     Learn More
                 </a>
             </div>
-            <div class="mainImg">
+            <div class="mainImg" data-aos="fade-left">
                 <img src="./assets/images/Homepage/mainSectionRight.png" alt="">
             </div>
         </div>
@@ -93,8 +93,8 @@
 <div class="bg"></div>
         <!-- SERVICE 1  -->
         <div class="service service1 flex itemsEnd mb200">
-            <img src="./assets/images/WhatWeDoInner/service1.png" alt="">
-            <div class="serviceDetails">
+            <img src="./assets/images/WhatWeDoInner/service1.png" data-aos="fade-right" alt="">
+            <div class="serviceDetails" data-aos="fade-left">
                 <p class="text2 liP">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             </div>
         </div>
@@ -103,10 +103,10 @@
 
         <!-- SERVICE 2  -->
         <div class="service service2 flex itemsStart flexRowReverse mb200">
-            <img src="./assets/images/WhatWeDoInner/service1.png" alt="">
+            <img src="./assets/images/WhatWeDoInner/service1.png" alt="" data-aos="fade-left">
             <div class="serviceDetails flexCol justifyBetween itemsStart">
-                <p class="text2 liP">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                <p class="text2 liP">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="text2 liP" data-aos="fade-right">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="text2 liP" data-aos="fade-right">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             </div>
         </div>
         <!-- SERVICE 2  -->
@@ -124,13 +124,13 @@
             <img src="./assets/images/Homepage/LogoFooter.png" alt="">
             <div class="medium flex itemsCenter flexCol">
                 <div class="links flex">
-                    <a href="/" class="text2">Home</a>
-                    <a href="/WhatWeDo.html" class="text2">What We Do</a>
-                    <a href="/AboutUs.html" class="text2">About Us</a>
-                    <a href="/ContactUs.html" class="text2">Contact Us</a>
-                    <a href="" class="text2">Blog</a>
+                    <a href="/bunka" class="text2">Home</a>
+                    <a href="/bunka/WhatWeDo.html" class="text2">What We Do</a>
+                    <a href="/bunka/AboutUs.html" class="text2">About Us</a>
+                    <a href="/bunka/ContactUs.html" class="text2">Contact Us</a>
+                    <a href="/bunka/blogs.html" class="text2">Blog</a>
                 </div>
-                <a href="./ContactUs.html" class="button">
+                <a href="/bunka/ContactUs.html" class="button">
                     Let's Talk
                 </a>
                 <div class="social flex">
@@ -167,5 +167,12 @@
     
     </div>
     </footer>
+
+    <script src="./assets/js/aos.js"></script>
+    <script>
+         AOS.init({
+        duration: 1000
+    });
+    </script>
 </body>
 </html>
