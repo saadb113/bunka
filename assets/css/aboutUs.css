@@ -184,4 +184,10 @@ p.text2.liP::before{
     .Partners .member .container .image > img{
         width: 100%;
     }
+    .Partners .member .container{
+        gap: 0 !important;
+    }
+    .Partners .member .container .image div, .Partners .member .container .image h2{
+        padding: 0 !important;
+    }
 }
