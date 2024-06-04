@@ -29,7 +29,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.splide__pagination{
+    display: none;
+}
 .slide-first{
     margin-right: 0 !important;
     width: 25rem !important;
@@ -411,6 +413,7 @@ cursor: pointer;
     position: relative;
     z-index: 11;
     width: 142rem;
+    display: flex !important;
     margin: auto;
     margin-top: 10rem;
     gap: 2rem;
