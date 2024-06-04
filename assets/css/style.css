@@ -203,6 +203,26 @@ color: #626262;
 .headermb{
     display: none;
 }
+.clientsContainer .slick-track {
+    display: flex;
+    animation: slide 70s linear infinite;
+}
+.clientsContainer .slick-track .slick-slide{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.mainHeader nav img{
+cursor: pointer;
+}
 .mainSection .mainImg img{
     width: 100%;
     height: 100%;
@@ -295,11 +315,11 @@ color: #626262;
     width: 100%;
     background: #F9F8FA;
     height: 16rem;
-    padding: 0 6rem;
+    /* padding: 0 6rem; */
     
 }
 .ourClients .container .clientsContainer .container{
-    width: calc(100% - 12rem);
+    width: 100%;
     margin: auto;
 }
 .ourClients .container .clientsContainer > div .line{
