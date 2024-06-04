@@ -33,7 +33,13 @@
 .slide-first{
     margin-right: 0 !important;
     width: 25rem !important;
+    display: none !important;
 }
+.splide__track{
+    padding-left: 25rem !important;
+    overflow: visible !important;
+}
+
 .swiper-slide:not(.slide-first){
     width: max-content !important;
     padding-right: 2rem ;
@@ -203,23 +209,7 @@ color: #626262;
 .headermb{
     display: none;
 }
-.clientsContainer .slick-track {
-    display: flex;
-    animation: slide 70s linear infinite;
-}
-.clientsContainer .slick-track .slick-slide{
-    margin-top: auto;
-    margin-bottom: auto;
-    display: flex;
-}
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-80%);
-    }
-}
+
 .mainHeader nav img{
 cursor: pointer;
 }
@@ -237,7 +227,45 @@ cursor: pointer;
 }
 /* HOME PAGE SECTION END */
 
-
+.marquee .swiper-wrapper {
+    transition-timing-function: linear !important;
+    }
+    .marquee { width: 100%; padding: 0 !important; }
+    .marquee .top {
+        margin-bottom: 10rem;
+    }
+    .marquee .container{
+        height : 16rem; background: #F9F8FA;
+    }
+    .marquee .wp-block-group__inner-container { width: 100%; max-width: 100%; }
+    .marquee .swiper { overflow: visible; }
+    .marquee .swiper-wrapper { transition-timing-function: linear !important; }
+    .marquee .swiper-slide { width: auto; }
+    .marquee figure { 
+        gap: 1rem;    
+    }
+    .marquee figure .line{
+        width: 3.45rem;
+        border-top: 1px solid black;
+    } 
+    .marquee .swiper-slide img { width: auto; max-height: 110px; margin: 0 40px; }
+    @media (min-width:1200px) {
+        .marquee .swiper-slide img {
+            image-rendering: -webkit-optimize-contrast; /*only chrome*/
+        }
+    }
+    @media (max-width:1680px) {
+        .marquee .swiper-slide img { max-height: 6.548vw; }
+    }
+    @media (max-width:1199px) {
+        .marquee .swiper-slide img { max-height: 9.548vw; margin: 0 30px; }
+    }
+    @media (max-width:767px) {
+        .marquee .swiper-slide img { max-height: 95px; margin: 0 15px; }
+    }
+    @media (max-width:576px) {
+        .marquee .swiper-slide img { max-height: 115px; }
+    }
 
 
 
@@ -355,7 +383,7 @@ cursor: pointer;
 .reviewsSection .swiper-wrapper {
     width: 100%;
     margin-left: auto;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .reviewsSection .swiper-wrapper::-webkit-scrollbar {
     display: none;

@@ -27,6 +27,9 @@
     width: calc(100% - 12rem) !important;
     margin-right: 0 !important;
 }
+.splide__track{
+    padding-left: 12rem !important;
+}
 
 footer .container,
 .blogs .container{
@@ -130,13 +133,18 @@ footer .container .top .medium .links{
     .headermb{
         display: flex;
     }
+    .reviewsSection .arrow{
+        margin-top: 4rem;
+    }
     .headermb .topHeader{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+    .splide__track{
+        padding-left: 0 !important;
+    }
     .slide-first{display: none !important;}
     .headermb .topHeader .hamburger{
         display: flex;
