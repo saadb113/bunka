@@ -145,6 +145,10 @@ footer .container .top .medium .links{
         width: 5rem;
         position: relative;
     }
+    .headermb .logo{
+        position: absolute;
+        top: 40px;
+    }
     .reviewsSection .arrow, .reviewsSection > h2, .reviewsSection .swiper-wrapper{
         width: 100% !important;
         margin-left: auto;
