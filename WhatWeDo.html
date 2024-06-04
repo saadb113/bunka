@@ -25,7 +25,7 @@
                 <a href="/bunka/ContactUs.html" class="text">Contact Us</a>
                 <a href="/bunka/blogs.html" class="text">Blog</a>
             </nav>
-            <a href="./ContactUs.html" class="talk button">
+            <a href="/bunka/ContactUs.html" class="talk button">
                 Let's Talk
             </a>
         </header>
@@ -51,11 +51,11 @@
                     <a href=""><img src="./assets/images/Homepage/linkedinHeader.png" alt=""></a>
                     <a href=""><img src="./assets/images/Homepage/YoutubeHeader.png" alt=""></a>
                 </div>
-                <a href="/bunka/WhatWeDo.html" class="text">What We Do</a>
+                <a href="/bunka/WhatWeDo.html" class="text active">What We Do</a>
                 <a href="/bunka/AboutUs.html" class="text">About Us</a>
                 <a href="/bunka/ContactUs.html" class="text">Contact Us</a>
                 <a href="/bunka/blogs.html" class="text">Blog</a>
-                <a href="./ContactUs.html" class="talk button">
+                <a href="/bunka/ContactUs.html" class="talk button">
                     Let's Talk
                 </a>
             </div>
@@ -73,7 +73,7 @@
                 <p class="text">
                     Your company runs differently than any other. That is why our approach to solving the toughest corporate concerns is customized to your organization.
                 </p>
-                <a href="./AboutUs.html" class="button">
+                <a href="/bunka/AboutUs.html" class="button">
                     Learn More
                 </a>
             </div>
@@ -245,6 +245,62 @@
 
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/StatsCountDown.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
 
+    <script>
+    
+    const targetElement = document.querySelector('#ImpactSection');
+    
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Run the calculateSum function when the target element is in the viewport
+     console.log("first")
+    $('.counting').each(function() {
+    var $this = $(this),
+      countTo = $this.attr('data-count');
+    
+    $({ countNum: $this.text()}).animate({
+    countNum: countTo
+    },
+    
+    {
+    
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+    
+    });  
+    
+    
+    });
+    
+      // Stop observing once the target element is in the viewport
+      observer.unobserve(entry.target);
+    }
+    });
+    });
+    
+    observer.observe(targetElement);
+    
+    function handleWindowResize() {
+    // Check if the target element is in the viewport after the window is resized
+    const isIntersecting = targetElement.getBoundingClientRect().top < window.innerHeight;
+    if (isIntersecting) {
+    // const result = calculateSum(3, 5);
+    // targetElement.textContent = result; // Display the result within the target element
+    }
+    }
+    
+    // Attach the handleWindowResize function to the window resize event
+    window.addEventListener('resize', handleWindowResize);
+    
+    </script>
 </body>
 </html>
