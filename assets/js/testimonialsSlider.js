@@ -26,6 +26,8 @@ new Swiper(".mySwiper", {
 let positions = []
 let positionNumber = 0
 const slides = document.querySelectorAll(".swiper-slide")
+const prevArrow = document.querySelectorAll(".arrow svg:nth-child(1)")
+const nextArrow = document.querySelectorAll(".arrow svg:nth-child(2)")
 const makeSlidePositions = ()=>{
     if(window.innerWidth <= 1024){
         positionNumber = window.innerWidth
